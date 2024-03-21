@@ -1,0 +1,305 @@
+.main_section {
+	background-color: #17162587;
+	position: relative;
+	z-index: 1007;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+}
+
+.svg {
+	position: absolute;
+	border: 1px rgba(255, 255, 255, 0) solid;
+}
+
+.about_section{
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: stretch;
+	position: relative;
+	padding: 15% 40px;
+	height: 100vh;
+}
+
+.prez {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column-reverse;
+	align-items: center;
+	z-index: 1011;
+	margin-bottom: 10px;
+}
+
+.about_section h2{
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+.about_section p{
+	font-size: 1em;
+	color: #fff;
+	margin-top: 3%;
+	z-index: 1011;
+}
+
+.titre {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	align-content: flex-start;
+	z-index: 1011;
+}
+
+.avatar {
+	width: 58%;
+	object-fit: contain;
+	align-self: center;
+}
+
+.allButtons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	z-index: 1015;
+	width: 100%;
+}
+
+.socialButtons{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 8%;
+	width: 100%;
+}
+
+.socialButtons a {
+	border: 1px #fff solid;
+	border-radius: 50px;
+	padding: 2px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.socialButtons img {
+	width: 20px;
+	height: 20px;
+}
+
+.socialButtons a:hover{
+	background-color: #602FDD;
+	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.mail {
+	background-color:#17162500;
+	border: 1px #fff solid;
+	border-radius: 50px;
+	padding: 2px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.mail img {
+	width: 20px;
+	height: 20px;
+}
+
+.mail:hover{
+	background-color: #602FDD;
+	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cv{
+	width: 55%;
+	height: 45px;
+	border-radius: 50px;
+	border: 0px;
+	color: #fff;
+	background: linear-gradient(36deg, #602FDD, #212350);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	margin-top: 00px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: large;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	gap: 3%;
+}
+
+.cv:hover{
+	transform: translateY(-6px);
+	transition: all 0.3s ease-in-out;
+	box-shadow: 2px 2px 20px #35118f;
+}
+
+.cv img{
+	height: 16px;
+	width: 16px;
+}
+
+.scroll_arrow{
+	position: relative;
+	width: 60px;
+	z-index: 1015;
+	bottom: 100px;
+	left: 42%;
+	cursor: pointer;
+}
+
+.scroll_arrow a{
+	z-index: 1016;
+}
+
+.purple_background_section {
+	background-color: #171626;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
+
+@media screen and (min-width: 360px) {
+	.allButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+		justify-content: flex-start;
+    z-index: 1015;
+    width: 100%;
+    gap: 30px;
+	}
+
+}
+
+@media screen and (min-width: 545px) {
+	.about_section{
+	padding: 80px;
+	}
+
+	.about_section p {
+		font-size: 1em;
+		color: #fff;
+		margin: 3% 3% 0 0;
+		z-index: 1011;
+	}
+
+	.avatar {
+		width: 55%;
+		object-fit: contain;
+		align-self: center;
+	}
+
+	.titre {
+		margin-bottom: 5%;
+	}
+
+	.allButtons {
+		width: 300px;
+		height: 200px;
+	}
+}
+
+@media screen and (min-width: 700px) {
+
+	.prez {
+		justify-content: flex-start;
+	}
+
+	.avatar {
+    width: 40%;
+		margin-bottom: 3%;
+	}
+
+	.socialButtons {
+    margin-top: 8%;
+	}
+
+	.socialButtons a {
+    width: 50px;
+    height: 50px;
+	}
+
+	.socialButtons img {
+    width: 25px;
+    height: 25px;
+	}
+
+	.mail {
+		width: 50px;
+    height: 50px;
+	}
+
+	.mail img{
+		width: 25px;
+    height: 25px;
+	}
+
+	.cv {
+    width: 60%;
+    height: 50px;
+	}
+
+	nav ul.main {
+		gap: 110px;
+	}
+
+	nav ul.main li a {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.about_section {
+		align-content: center;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	.avatar {
+    width: 35%;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.about_section {
+		padding: 280px 250px 8%;
+	}
+
+	.socialButtons {
+		margin-bottom: 5%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	nav ul.main {
+    gap: 30px;
+	}
+
+	nav ul.main li a {
+    font-size: 1.5rem;
+	}
+
+	.prez {
+		flex-direction: row;
+    justify-content: space-evenly;
+		padding: 0 100px;
+	}
+
+	.avatar {
+    width: 22%;
+	}
+
+}
+

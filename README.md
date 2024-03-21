@@ -1,2 +1,9 @@
-# Portfolio_le_retour
-Mon Portfolio, le retour, sans Symfony. 
+# Portfolio - Camille Rouaux - Développeuse Web Back-End
+
+## Description
+
+Voici mon Portfolio, un projet responsive et accessible.
+
+## Preview
+
+![Portfolio](/public/image/Portfolio.png)

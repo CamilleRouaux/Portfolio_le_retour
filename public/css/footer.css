@@ -1,0 +1,61 @@
+footer{
+	padding: 50px;
+}
+
+.footerSocialButtons{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.footerSocialButtons img{
+	width: 18px;
+  height: 18px;
+}
+
+.footerSocialButtons a{
+	width: 30px;
+	height: 30px;
+	border: 1px #fff solid;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.linkedin_footer img{
+	width: 16px;
+  height: 16px;
+}
+
+.footerSocialButtons a:hover{
+	background-color: #362662;
+	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.mail_footer{
+	width: 30px;
+	height: 30px;
+	border: 1px #fff solid;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #171626;
+	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.mail_footer:hover {
+	background-color: #362662;
+	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+footer p{
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+	margin-top: 25px;
+}
+

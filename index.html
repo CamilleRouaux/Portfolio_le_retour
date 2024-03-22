@@ -6,9 +6,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- favicon -->
-		 <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+		 <link rel="shortcut icon" href="assets/image/logo.png" type="image/x-icon">
 		<!-- Our custom CSS -->
 		<link rel="stylesheet" href="assets/css/home.css">
+		<link rel="stylesheet" href="assets/css/language_switch.css">
 		<link rel="stylesheet" href="assets/css/nav.css">
 		<link rel="stylesheet" href="assets/css/about.css">
 		<link rel="stylesheet" href="assets/css/skills.css">
@@ -25,14 +26,21 @@
 			<span></span>
 		</div>
 
+		<div class="switch">
+	    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+	    <label for="language-toggle"></label>
+	    <span class="on">FR</span>
+	    <span class="off">EN</span>
+  	</div>
+
 		<a href="#"><img  class="logo" src="assets/image/logo.png" alt="Logo"></a>
 		
 		<nav class="navbar">
 			<div class="nav-links">
 				<ul class="main">			
-					<li><a href="#about_section">About</a></li>
-					<li><a href="#skills_section">Skills</a></li>
-					<li><a href="#projects_section">Projects</a></li>
+					<li><a href="#about_section" id="aboutContent">À propos</a></li>
+					<li><a href="#skills_section" id="skillsContent">Compétences</a></li>
+					<li><a href="#projects_section" id="projectsContent">Projets</a></li>
 					<!-- <li><a href="#">Contact</a></li> -->
 				</ul>
 			</div>	
@@ -56,9 +64,9 @@
 
 				<div class="prez">
 					<div class="titre">
-						<h5>Hey there ! I'm -</h5>
+						<h5 id="welcomeContent">Hey ! Moi c'est -</h5>
 						<h2>Camille Rouaux</h2>
-						<p>I'm a <b>Backend Developper</b>, and i like to do some shenanigans with CSS and other Front features.</p>
+						<p id="introContent">Je suis Développeuse Backend, et j'aime aussi m'exercer sur du CSS ou d'autres features en Front.</p> 
 					</div>				
 					<img src="assets/image/picture.png" class="avatar" alt="Photo de Camille Rouaux">	
 				</div>		
@@ -74,7 +82,7 @@
 							<img src="assets/image/mail.png">
 						</button>
 					</div>
-					<a href="assets/doc/CV_Rouaux_Camille.pdf" download="CV_Rouaux_Camille.pdf" class="cv"><img src="assets/image/download.png" alt=""> Mon CV</a>
+					<a href="assets/doc/CV_Rouaux_Camille.pdf" download="CV_Rouaux_Camille.pdf" class="cv"><img src="assets/image/download.png" alt=""><p id="cv">Mon CV</p></a>
 				</div>
 			</div>
 
@@ -87,7 +95,7 @@
 			</div> #} -->
 			<div class="purple_background_section">
 				<div class="skills_section" id="skills_section">
-					<h2>Skills</h2>
+					<h2 id="title_skills_section">Compétences</h2>
 					<div class="all_skills">
 						<div class="front_skills" id="skills_width">
 							<h3>Front-end</h3>
@@ -139,7 +147,7 @@
 						</div>
 
 						<div class="other_skills" id="skills_width">
-							<h3>Other</h3>
+							<h3 id="other">Autre</h3>
 							<ul class="skill_list">
 								<span>
 									<li class="skill">
@@ -157,7 +165,7 @@
 						</div>
 
 						<div class="loading_skills" id="skills_width">
-							<h3>Loading ..</h3>
+							<h3 id="loading">En cours .. </h3>
 							<ul class="skill_list">
 								<span>
 									<li class="skill">
@@ -178,17 +186,17 @@
 				</div>
 
 				<div class="projects_section" id="projects_section" >
-					<h2>Projects </h2>
+					<h2 id="title_projects_section">Projets </h2>
 					<div class="projects_container">
 						<div class="project_card">
 							<div class="project_card_img">
 								<img src="assets/image/Portfolio.png" alt="Background mon Portfolio ">
 							</div>
 							<div class="project_card_body">
-								<h3 class="project_card_title">Mon Portfolio</h3>
-								<p class="project_card_description">Projet personnel</p>
+								<h3 class="project_card_title">Portfolio</h3>
+								<p class="project_card_description" id="portfolio_description">Vous y êtes en ce moment même !</p>
 								<div class="project_card_tags">
-									<span class="project_card_element">Symfony</span>
+									<span class="project_card_element">HTML</span>
 									<span class="project_card_element">CSS3</span>
 									<span class="project_card_element">JavaScript</span>
 								</div>
@@ -203,7 +211,7 @@
 							</div>
 							<div class="project_card_body">
 								<h3 class="project_card_title">The Lord of the Rings Encyclopædia</h3>
-								<p class="project_card_description_lotr">Projet personnel en cours de développement</p>
+								<p class="project_card_description_lotr" id="lotr_description">Projet personnel afin de pratiquer React/Redux.</p>
 								<div class="project_card_tags">
 									<span class="project_card_element">Symfony</span>
 									<span class="project_card_element">React</span>
@@ -221,7 +229,7 @@
 							</div>
 							<div class="project_card_body">
 								<h3 class="project_card_title">Hortus Plantae Floresque</h3>
-								<p class="project_card_description">Projet de fin d'étude réalise en équipe.</p>
+								<p class="project_card_description" id="hpf_description">Projet de fin d'année réalisé en équipe de 5. </p>
 								<div class="project_card_tags">
 									<span class="project_card_element">Symfony</span>
 									<span class="project_card_element">CSS3</span>
@@ -248,7 +256,7 @@
               <img src="assets/image/mail.png">
             </button>
           </div>
-          <p>© 2024 Camille ROUAUX - Tous droits réservés.</p>
+          <p id="right_reserved">© 2024 Camille ROUAUX - Tous droits réservés.</p>
         </footer>
 
 			</div>
@@ -257,7 +265,7 @@
    
     
   </body>
-
+		<script src="assets/js/toggle_language.js"></script>
 		<script src="assets/js/twinkling_stars.js"></script>
 		<script src="assets/js/parallax.js"></script>
 		<script src="assets/js/burger.js"></script>

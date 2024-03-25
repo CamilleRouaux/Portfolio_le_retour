@@ -5,7 +5,7 @@
 		let locale = event.currentTarget.checked ? 'eng' : 'fr';
 
   	document.querySelector('#welcomeContent').textContent = language[locale].welcome;
-		document.querySelector('#introContent').textContent = language[locale].intro;
+		document.querySelector('#introContent').innerHTML = language[locale].intro;
 		document.querySelector('#cv').textContent = language[locale].resume;
 		document.querySelector('#aboutContent').textContent = language[locale].about;
 		document.querySelector('#skillsContent').textContent = language[locale].skills;
@@ -30,7 +30,7 @@
 	let language = {
 			eng: {
 					welcome : "Hey there ! I'm -",
-					intro : "I'm a Backend Developper, and I like to do some shenanigans with CSS and other Front features.",
+					intro : "I'm a <b>Backend Developper</b>, and I like to do some shenanigans with CSS and other Front features.",
 					about : "About",
 					skills : "Skills",
 					other : "Other",
@@ -48,7 +48,7 @@
 
 			fr: {
 				welcome : "Hey ! Moi c'est -",
-				intro : "Je suis Développeuse Backend, et j'aime aussi m'exercer sur du CSS ou d'autres features en Front.",
+				intro : "Je suis <b>Développeuse Backend</b>, et j'aime aussi m'exercer sur du CSS ou d'autres features en Front.",
 				about : "À propos",
 				skills : "Skills",
 				other : "Autre",

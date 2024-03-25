@@ -112,7 +112,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 @media screen and (min-width: 1200px) {
 	.switch {
-  top: 46px;
+  top: 54px;
 	left: 105px;
   }
 }

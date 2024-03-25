@@ -50,6 +50,10 @@
 	color: #fff;
 }
 
+.skill_icon{
+	display: flex;
+}
+
 .skill_icon img{
 	height: 18px;
 	width: 18px;
@@ -74,7 +78,6 @@
 	}
 
 	.all_skills li {
-    align-items: center;
     justify-content: flex-start;
 		font-size: 1.2em;
 	}

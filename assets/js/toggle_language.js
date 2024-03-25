@@ -50,7 +50,7 @@
 				welcome : "Hey ! Moi c'est -",
 				intro : "Je suis <b>Développeuse Backend</b>, et j'aime aussi m'exercer sur du CSS ou d'autres features en Front.",
 				about : "À propos",
-				skills : "Skills",
+				skills : "Compétences",
 				other : "Autre",
 				loading :"En cours .. ",
 				projects : "Projets",

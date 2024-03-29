@@ -14,8 +14,8 @@ footer{
 }
 
 .footerSocialButtons a{
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	border: 1px #fff solid;
 	border-radius: 50px;
 	display: flex;
@@ -30,13 +30,13 @@ footer{
 }
 
 .footerSocialButtons a:hover{
-	background-color: #362662;
+	background-color: #602FDD;;
 	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .mail_footer{
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	border: 1px #fff solid;
 	border-radius: 50px;
 	display: flex;
@@ -44,10 +44,11 @@ footer{
 	justify-content: center;
 	background-color: #171626;
 	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+	cursor: grab;
 }
 
 .mail_footer:hover {
-	background-color: #362662;
+	background-color: #602FDD;;
 	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
 }
 

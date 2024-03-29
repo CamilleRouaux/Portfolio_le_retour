@@ -44,7 +44,7 @@ footer{
 	justify-content: center;
 	background-color: #171626;
 	transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
-	cursor: grab;
+	cursor: pointer;
 }
 
 .mail_footer:hover {
